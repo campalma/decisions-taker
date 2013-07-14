@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0C2A3117928FDA00716ED4 /* tails.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A0C2A2F17928FDA00716ED4 /* tails.png */; };
+		9A0C2A3217928FDA00716ED4 /* heads.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A0C2A3017928FDA00716ED4 /* heads.png */; };
 		9A5725FE17927D1D00401FE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5725FD17927D1D00401FE4 /* UIKit.framework */; };
 		9A57260017927D1D00401FE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5725FF17927D1D00401FE4 /* Foundation.framework */; };
 		9A57260217927D1D00401FE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A57260117927D1D00401FE4 /* CoreGraphics.framework */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A0C2A2F17928FDA00716ED4 /* tails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tails.png; path = ../../../Desktop/tails.png; sourceTree = "<group>"; };
+		9A0C2A3017928FDA00716ED4 /* heads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heads.png; path = ../../../Desktop/heads.png; sourceTree = "<group>"; };
 		9A5725F917927D1D00401FE4 /* DecisionsTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecisionsTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5725FD17927D1D00401FE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A5725FF17927D1D00401FE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +128,8 @@
 		9A57260417927D1D00401FE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9A0C2A2F17928FDA00716ED4 /* tails.png */,
+				9A0C2A3017928FDA00716ED4 /* heads.png */,
 				9A57260517927D1D00401FE4 /* DecisionsTaker-Info.plist */,
 				9A57260617927D1D00401FE4 /* InfoPlist.strings */,
 				9A57260917927D1D00401FE4 /* main.m */,
@@ -225,6 +231,8 @@
 			files = (
 				9A57260817927D1D00401FE4 /* InfoPlist.strings in Resources */,
 				9A57261117927D1D00401FE4 /* MainStoryboard.storyboard in Resources */,
+				9A0C2A3117928FDA00716ED4 /* tails.png in Resources */,
+				9A0C2A3217928FDA00716ED4 /* heads.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +443,7 @@
 				9A57262E17927D1E00401FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A57262F17927D1E00401FE4 /* Build configuration list for PBXNativeTarget "DecisionsTakerTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +452,7 @@
 				9A57263117927D1E00401FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

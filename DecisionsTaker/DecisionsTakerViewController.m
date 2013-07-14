@@ -15,6 +15,7 @@
 @implementation DecisionsTakerViewController
 
 @synthesize coinOutput;
+@synthesize coinImage;
 
 - (void)viewDidLoad
 {
@@ -25,6 +26,7 @@
 - (void)viewDidUnload
 {
     coinOutput = nil;
+    coinImage = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -36,11 +38,15 @@
 
 - (IBAction)setCoinOutputLabel:(id)sender {
     NSInteger coinValue = arc4random() % 2;
+    UIImage *image;
     if(coinValue == 0){
-        coinOutput.text = @"It's head!";
+        coinOutput.text = @"It's heads!";
+        image = [UIImage imageNamed: @"heads.png"];
     }
     else{
         coinOutput.text = @"It's tails!";
+        image = [UIImage imageNamed: @"tails.png"];
     }
+    [coinImage setImage:image];
 }
 @end

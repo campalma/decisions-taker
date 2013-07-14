@@ -22,7 +22,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8vq-Uf-gRx">
-                                <rect key="frame" x="110" y="143" width="101" height="37"/>
+                                <rect key="frame" x="110" y="120" width="101" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Flip a Coin">
@@ -37,16 +37,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="6Xs-FO-jvJ">
-                                <rect key="frame" x="94" y="85" width="132" height="21"/>
+                                <rect key="frame" x="94" y="189" width="132" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="To decide maybe you need to..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qLA-Av-FKz">
+                                <rect key="frame" x="34" y="70" width="241" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="da0-pF-3rr">
+                                <rect key="frame" x="60" y="226" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="coinImage" destination="da0-pF-3rr" id="ego-p2-IiX"/>
                         <outlet property="coinOutput" destination="6Xs-FO-jvJ" id="dir-k2-AiS"/>
                     </connections>
                 </viewController>
@@ -58,9 +70,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DecisionsTakerViewController.h"/>
             <relationships>
                 <relationship kind="action" name="setCoinOutputLabel:"/>
-                <relationship kind="action" name="setCoinResultLabel:"/>
+                <relationship kind="outlet" name="coinImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="coinOutput" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="coinResult" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

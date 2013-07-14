@@ -10,10 +10,11 @@
 
 @interface DecisionsTakerViewController : UIViewController{
     IBOutlet UILabel *coinOutput;
+    IBOutlet UIImageView *coinImage;
 }
 
 - (IBAction)setCoinOutputLabel:(id)sender;
 
 @property(strong, nonatomic) UILabel *coinOutput;
-
+@property(strong, nonatomic) UIImageView *coinImage;
 @end
