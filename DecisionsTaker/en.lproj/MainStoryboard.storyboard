@@ -32,6 +32,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="setCoinOutputLabel:" destination="2" eventType="touchUpInside" id="d9i-7h-XnS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="6Xs-FO-jvJ">
                                 <rect key="frame" x="94" y="85" width="132" height="21"/>
@@ -43,6 +46,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="coinOutput" destination="6Xs-FO-jvJ" id="dir-k2-AiS"/>
+                    </connections>
                 </viewController>
             </objects>
         </scene>
@@ -50,6 +56,12 @@
     <classes>
         <class className="DecisionsTakerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DecisionsTakerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="setCoinOutputLabel:"/>
+                <relationship kind="action" name="setCoinResultLabel:"/>
+                <relationship kind="outlet" name="coinOutput" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="coinResult" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

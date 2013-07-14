@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DecisionsTakerViewController : UIViewController
+@interface DecisionsTakerViewController : UIViewController{
+    IBOutlet UILabel *coinOutput;
+}
+
+- (IBAction)setCoinOutputLabel:(id)sender;
+
+@property(strong, nonatomic) UILabel *coinOutput;
 
 @end

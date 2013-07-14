@@ -14,6 +14,8 @@
 
 @implementation DecisionsTakerViewController
 
+@synthesize coinOutput;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -22,6 +24,7 @@
 
 - (void)viewDidUnload
 {
+    coinOutput = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +34,7 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)setCoinOutputLabel:(id)sender {
+    coinOutput.text = @"asdf";
+}
 @end
