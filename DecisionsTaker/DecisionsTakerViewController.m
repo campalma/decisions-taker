@@ -35,6 +35,12 @@
 }
 
 - (IBAction)setCoinOutputLabel:(id)sender {
-    coinOutput.text = @"asdf";
+    NSInteger coinValue = arc4random() % 2;
+    if(coinValue == 0){
+        coinOutput.text = @"It's head!";
+    }
+    else{
+        coinOutput.text = @"It's tails!";
+    }
 }
 @end
